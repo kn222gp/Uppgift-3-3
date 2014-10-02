@@ -1,6 +1,11 @@
 
 #topbar
 {
+    background-image:url('pics/coffey.jpg');
+    max-width:600px;
+    height:220px;
+    background-position:bottom;
+    background-repeat:no-repeat;
     background-color:#4f463c;
     
     /* För den lilla texten uppe i höger. */
@@ -14,37 +19,38 @@
 
 #menu
 {
-    background-image:url('pics/coffey.jpg');
-    width:600px;
-    height:200px;
+    height: 30px;
+    background-color:#4f463c;
 }
 
-#menu ul
-{
-    margin-top:160px;
-    float:left;
-    width:100%;
-    padding:0;
-    background-color:#786f66;
+    #menu li
+    {
+        text-align:left;
+        margin-top: 3px;
+        list-style-type:none;
+        float:left;
+        margin-right: 2px;
+        
+    }
     
-    list-style-type:none;
-}
-
-#menu a
-{
-    background-color:#786f66;
-    float:left;
-    width:6em;
-    text-decoration:none;
-    color:#e8e5d1;
-    padding: 0.2em 0.6em;
-    border-right: 1px solid #786f66;
-}
-
-#menu li
-{
-    display:inline;
-}
+    #menu a
+    {
+        color: #e8e5d1;
+        text-decoration:none;
+        padding: 10px 10px;
+        background-color: #797066;
+        text-transform: capitalize;
+    }
+                #menu a:hover
+                {
+                    background-color:#9c9084;
+                }
+                    #menu li.active a
+                    {
+                        background-color: #e8e5d1;
+                        color:#797066;
+                        
+                    }
 
 
 #container
@@ -59,42 +65,90 @@
 #content
 {
     max-width:600px;
-    margin-top:50px;
     background-color:#e8e5d1;
           
 }
 
-h1
-{
-    font-family:Times;    
-}
 
 #maincontent
 {
-    
     font-family:verdana;
     color:#786f66;
-    width: 320px;
+    width: 60%;
     float:left;
+    padding: 5px;
 }
+
+    #maincontent p 
+    {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    
+        #maincontent h1
+        {
+            font-family:Times;
+        }
+            img
+            {
+                float:left;
+                margin-right:2px;
+                margin-left:2px;
+            }
+
 
 #subcontent
 {
-    
+    margin-top: 30px;
     font-family:verdana;
     color:#786f66;
-    width: 280px;
+    width: 35%;
     float:left;
+    border-left: 1px dashed #786f66;
 }
 
-#subcontent.ul
-{
-    color:black;
-}
+    #subcontent p 
+    {
+        font-size: 9px;
+        line-height:20px;
+        padding: 5px;
+    }
+
+        #subcontent h1
+        {
+            font-size: 12px;
+            padding: 5px;
+        }
+        
+            #subcontent h2
+            {
+                font-size: 10px;
+                padding: 5px;
+            }
+
+                #subcontent a
+                {
+                    text-align:left;
+                    font-size:12px;
+                    color:black;
+                }
+                    #subcontent ul li
+                    {
+                        margin-left: -32px;
+                        list-style-type: none;
+                        text-align:left;
+                    }
+
+
 
 #bottomcontent
 {
+    font-family:verdana;
+    font-style:italic;
+    font-size: 9px;
+    color:#786f66;
+    padding:5px;
     clear:both;
 }
 
-a[href="#maincontent"] {opacity:0;}
+a[href="#maincontent"] {display:none;}
